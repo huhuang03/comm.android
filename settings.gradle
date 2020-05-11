@@ -1,0 +1,3 @@
+rootProject.name='comm.android'
+include ':app'
+include ':dm_comm'
