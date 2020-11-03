@@ -39,5 +39,10 @@ data class Result(val code: Int = 0, var msg: String = "success") {
         return this
     }
 
+    override fun toString(): String {
+        return "Result(code=$code, msg='$msg')"
+    }
+
     constructor(success: Boolean, errMsg: String, rightMsg: String = ""): this(if (success) 0 else 1, if (success) rightMsg else errMsg)
+
 }
