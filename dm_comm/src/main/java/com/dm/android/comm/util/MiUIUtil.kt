@@ -27,6 +27,7 @@ fun getMIUIVersionCode(): Int {
 }
 
 fun hasPermissionBgOpen(context: Context): Boolean {
+    return true
     if (!isMIUI()) return true
     var rst = false
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {

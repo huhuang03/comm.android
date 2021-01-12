@@ -1,0 +1,11 @@
+* How to use
+
+In ~app/build.gradle~
+#+BEGIN_SRC gradle
+implementation project(':dm_comm')
+#+END_SRC
+
+In ~setting.gradle~
+#+BEGIN_SRC gradle
+project(":dm_comm").projectDir = new File(settingsDir, "../comm.android/dm_comm")
+#+END_SRC
